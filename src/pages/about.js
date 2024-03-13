@@ -1,21 +1,25 @@
 import * as React from "react"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import PrimaryLayout from "../layouts/PrimaryLayout"
+import Post from "../components/Post"
 
+export default function About() {
+    return (
+      <PrimaryLayout>
+        <Post title="post title" excerpt="loremdfsd fds fsdkf sdfkmdsf"></Post>
+        <Post title="post title" excerpt="loremdfsd fds fsdkf sdfkmdsf"></Post>
+        <Post title="post title" excerpt="loremdfsd fds fsdkf sdfkmdsf"></Post>
+      </PrimaryLayout>
+    );
+  }
+  
+  
+  
 
-export default () => {
-    return <div>
-        <Header title="home page tile"></Header>
-        <div className="container">
-            <div className="row justify-content-md-center">
-                <div className="col-md-auto p-5">
-                    <h1>
-                        about us
-                    </h1>
-                </div>
-            </div>
-        </div>
-        <Footer></Footer>
+// export default () => {
 
-    </div>
-}
+//     return <PrimaryLayout>
+//         <h1>
+            
+//         </h1>
+//     </PrimaryLayout>
+// }
