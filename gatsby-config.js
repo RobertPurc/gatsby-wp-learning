@@ -8,5 +8,20 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
+
+  siteMetadata: {
+    title: "Gatsby bootstrap"
+  },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `src`,
+        // Path to the directory
+        path: `${__dirname}/src/`,
+      },
+    },
+    { resolve: `gatsby-transformer-remark` }
+  ]
 }

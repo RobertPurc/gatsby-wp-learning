@@ -6,7 +6,7 @@ import * as postStyles from "./Post.module.css";
 const Post = (props) => (
 
     <Card>
-        <Card.Img variant="top" src="./test.png" />
+        <Card.Img variant="top" src={props.img} />
         <Card.Body>
             <Card.Title>{props.title}</Card.Title>
             <Card.Text>
